@@ -7,41 +7,36 @@
 - **シンプルな操作**: 直感的なGUIで簡単に設定可能。
 - **多用途**: 様々なゲームでの放置作業に対応。
 - **カスタマイズ可能**: 押下・離脱間隔やキー、ボタンを自由に設定。
-- **緊急停止機能**: Alt + ピリオド（.）+ Enterで自動クリックを瞬時に停止。
+- **緊急停止機能**: Ctrl + Shift + Sで自動クリックを瞬時に停止。
 
 ## 使用方法
 
-### 仮想環境の設定
+### 仮想環境の設定とパッケージのインストール
 
-1. 仮想環境の作成
-    ```bash
-    python -m venv myenv
-    ```
-
-2. 仮想環境のアクティベート
+1. 仮想環境の作成、アクティベート、および必要なパッケージのインストールを行うスクリプトがあります。
     - Windows:
         ```bash
-        .\myenv\Scripts\activate
+        install.bat
         ```
     - macOS/Linux:
         ```bash
-        source myenv/bin/activate
+        ./install.sh
         ```
-
-3. 必要なパッケージのインストール
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ### ツールの実行
 
-1. `AutoClicker.py`を実行
-    ```bash
-    python AutoClicker.py
-    ```
+1. `AutoClicker.py`を実行するためのスクリプトがあります。
+    - Windows:
+        ```bash
+        start.bat
+        ```
+    - macOS/Linux:
+        ```bash
+        ./start.sh
+        ```
 
 2. GUIで設定を行い、「Start」ボタンをクリックして自動クリックを開始。
-3. 自動クリックを停止するには、Alt + ピリオド（.）+ Enterを押すか、GUI上の「Stop」ボタンをクリック。
+3. 自動クリックを停止するには、Ctrl + Shift + Sを押すか、GUI上の「Stop」ボタンをクリック。
 
 ## 必要なパッケージ
 
@@ -49,6 +44,7 @@
 
 - PyAutoGUI
 - Tkinter
+- Keyboard
 
 ## 注意事項
 
